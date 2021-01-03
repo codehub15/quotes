@@ -35,10 +35,11 @@ h1 {
 }
 
 .quote-section {
-  /* min-width: 55vw; */
+  width: 50vw;
+  max-width: 70vw;
   height: 30vh;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,16 +54,17 @@ blockquote {
   padding: 1rem;
   background:
   linear-gradient(to right, black 4px, transparent 4px) 0 0,
-  linear-gradient(to right, black 4px, transparent 4px) 0 100%,
-  linear-gradient(to left, black 4px, transparent 4px) 100% 0,
+  /* linear-gradient(to right, black 4px, transparent 4px) 0 100%, */
+  /* linear-gradient(to left, black 4px, transparent 4px) 100% 0, */
   linear-gradient(to left, black 4px, transparent 4px) 100% 100%,
   linear-gradient(to bottom, black 3px, transparent 3px) 0 0,
-  linear-gradient(to bottom, black 3px, transparent 3px) 100% 0,
-  linear-gradient(to top, black 4px, transparent 4px) 0 100%,
+  /* linear-gradient(to bottom, black 3px, transparent 3px) 100% 0, */
+  /* linear-gradient(to top, black 4px, transparent 4px) 0 100%, */
   linear-gradient(to top, black 4px, transparent 4px) 100% 100%;
 
+  border: 1px solid #000;
   background-repeat: no-repeat;
-  background-size: 55px 20px;
+  background-size: 55px 25px;
   background-color: rgba(247, 236, 196, 0.9);
 }
 
