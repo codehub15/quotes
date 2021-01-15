@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import Quotes from './components/Quotes';
-import './App.css';
+import './style/App.css';
 
 function App() {
   return (
