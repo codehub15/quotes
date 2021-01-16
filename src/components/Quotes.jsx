@@ -8,49 +8,48 @@ export default function Quotes() {
     const [styleBtn, setStyleBtn] = useState("");
     const [stylePath, setStylePath] = useState("");
 
-    let firstStyle = () => {
+    let firstStyle = (e) => {
+        let targetClass = e.target.className
+        setStyleBtn(targetClass)
         setStylePath(require('../style/style-one.css'));
     }
 
-    let secondStyle = () => {
+    let secondStyle = (e) => {
+        let targetClass = e.target.className
+        setStyleBtn(targetClass)
         setStylePath(require('../style/style-two.css'));
     }
 
-    let defaultStyle = () => {
+    let defaultStyle = (e) => {
+        let targetClass = e.target.className
+        setStyleBtn(targetClass)
         setStylePath(require('../style/style-default.css'));
     }
 
-    let checkBtn = (e) => {
-        console.log("check:", e.target.className)
-        setStyleBtn(e.target.className)
-
-        // switch (styleBtn) {
-        //     case "style-one":
-        //         console.log("btn:", styleBtn);
-        //         return setStyle(require('../style/style-one.css'));
-        //     // break;
-        //     case "style-two":
-        //         console.log("btn:", styleBtn);
-        //         return setStyle(require('../style/style-two.css'));
-        //     // break;
-        //     default:
-        //         console.log("btn:", styleBtn);
-        //         return setStyle(require('../style/style-default.css'));
-        // }
-    }
-
-    let checkStyle = () => {
-        console.log(stylePath)
-    }
-
+    // let changeStyle = (e) => {
+    //     let targetClass = e.target.className
+    //     setStyleBtn(targetClass)
+    // }
 
     useEffect(() => {
-        checkStyle()
+        console.log("btn:", styleBtn)
+        if (styleBtn.includes("style-one")) {
+            // firstStyle()
+            setStylePath(require('../style/style-one.css'));
+        }
+        else if (styleBtn.includes("style-two")) {
+            // secondStyle()
+            setStylePath(require('../style/style-two.css'));
+        }
+        else {
+            console.log("else")
+            // defaultStyle()
+            setStylePath(require('../style/style-default.css'));
+        }
     }, [stylePath])
 
     return (
         <>
-            {/* <link rel="stylesheet" type="text/css" href={stylePath} /> */}
             <div className="container">
                 <div className="quote-section">
                     <blockquote>
