@@ -1,36 +1,30 @@
 body {
-    background-color: rgb(227, 202, 243);
+    background-color: rgb(247, 247, 247);
 }
   
 header {
-    background-color: rgb(140, 85, 243);
+    background-color: #508eb3;
+}
+
+.app {
+    background-color: #fff;
 }
 
 h1 {
     border-bottom: 1px solid #0000;
-    background: linear-gradient(#00AC97 50%, #E4CDA4 50%);
 }
 
-.quote-section {
-    -webkit-box-shadow: 1px 2px 3px 5px #000000; 
-    box-shadow: 1px 2px 3px 5px #000000;
-    background-color: #00AC97;
+.container {
+    background-image: url('../assets/watercolor-blue.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
 }
 
 blockquote {
-    background:
-    linear-gradient(to right, black 4px, transparent 4px) 0 0,
-    /* linear-gradient(to right, black 4px, transparent 4px) 0 100%, */
-    /* linear-gradient(to left, black 4px, transparent 4px) 100% 0, */
-    linear-gradient(to left, black 4px, transparent 4px) 100% 100%,
-    linear-gradient(to bottom, black 3px, transparent 3px) 0 0,
-    /* linear-gradient(to bottom, black 3px, transparent 3px) 100% 0, */
-    /* linear-gradient(to top, black 4px, transparent 4px) 0 100%, */
-    linear-gradient(to top, black 4px, transparent 4px) 100% 100%;
-    border: 1px solid #000;
-    background-repeat: no-repeat;
-    background-size: 55px 25px;
-    background-color: rgba(247, 236, 196, 0.9);
+    border: 1px solid #508eb3;
+    background-color: rgba(247, 246, 243, 0.9);
 }
 
 .btn-new {
@@ -40,9 +34,7 @@ blockquote {
     margin-top: 3rem;
     border: none;
     color: #000;
-    background: linear-gradient(#E4CDA4 50%, #00AC97 50%);
-    -webkit-box-shadow: 1px 3px 3px 5px #000000; 
-    box-shadow: 1px 3px 3px 5px #000000;
+    box-shadow: 1px 3px 3px 5px #508eb3;
 }
 .btn-new:hover {
     opacity: 0.8;
