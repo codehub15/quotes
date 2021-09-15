@@ -4,7 +4,8 @@
 }
 
 body{
-  background-color: rgb(255, 248, 220);
+  background-color: rgb(147, 156, 184);
+  /* background-color: rgb(255, 248, 220); */
   overflow-x: hidden;
 }
 
@@ -17,12 +18,24 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 1rem;
-  margin-bottom: 2rem;
-  background-color: rgb(247, 236, 196);
+  /* margin-bottom: 2rem; */
+  background-color: rgb(196, 203, 224);
+  background: linear-gradient(rgb(147, 156, 184) 50%, 
+  rgb(196, 203, 224) 50%);
 }
 
 h1 {
   padding: 0.5rem 1rem;
+}
+
+.bg-txt {
+  font-size: 5em;
+}
+.txt-1 {
+  color: rgb(196, 203, 224);
+}
+.txt-2 {
+  color: rgb(147, 156, 184);
 }
 
 .container {
@@ -34,33 +47,44 @@ h1 {
 }
 
 .quote-section {
-  width: 50vw;
+  width: 55vw;
   max-width: 70vw;
-  height: 30vh;
+  /* height: 30vh; */
   margin-bottom: 1rem;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(242, 243, 247);
+  -webkit-box-shadow: 0px 0px 7px -4px #000000; 
+  box-shadow: 0px 0px 7px -4px #000000;
+  border-radius: 3px;
 }
 
 blockquote {
   min-width: 90%;
   padding: 1rem;
-  border: 1px solid #000;
-}
-
-q {
   font-size: 1.3em;
 }
 
-.btn-new {
-  font-size: 1.5em;
-  font-weight: bold;
+.quote-icon {
+  color: rgb(196, 203, 224);
   padding: 0.5rem 1rem;
+}
+
+
+/* q {
+  font-size: 1.3em;
+} */
+
+.btn-new {
+  /* font-size: 1.5em;
+  font-weight: bold;
+  padding: 0.5rem 1rem; */
   margin-top: 3rem;
   border: none;
+  background: none;
   color: #000;
 }
 .btn-new:hover {
