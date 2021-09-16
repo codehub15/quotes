@@ -59,11 +59,18 @@ blockquote {
   min-width: 90%;
   padding: 1rem;
   font-size: 1.3em;
+  line-height: 1.5em;
 }
 
 .quote-icon {
   color: rgb(196, 203, 224);
   padding: 0.5rem 1rem;
+}
+
+.author {
+  padding-top: 1rem;
+  font-size: 0.8em;
+  color: rgb(147, 156, 184);
 }
 
 .btn-new {

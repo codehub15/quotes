@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import Quote from './components/Quote';
 import Quotes from './components/Quotes';
 import './style/App.css';
 

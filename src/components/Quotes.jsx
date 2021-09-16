@@ -1,10 +1,35 @@
 import React, { useState, useEffect } from 'react';
-import quotes from '../quotes-data.js';
+// import quotes from '../quotes-data.js';
 import btnDeco from "../assets/deco-btn.png"
 
 export default function Quotes() {
-    let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    const [quote, setQuote] = useState("");
+    const [quotes, setQuotes] = useState([]);
+
+    // fetch data
+    useEffect(() => {
+        fetchData()
+    }, [])
+
+    const fetchData = () => {
+        fetch("https://type.fit/api/quotes")
+            .then(res => res.json())
+            .then(data => {
+                setQuotes(data)
+            })
+    }
+
+    const quoteResult = quotes.map((quote, index) => {
+        return <div key={quote.index}>
+            <p>
+                {quote.text}
+            </p>
+            <p className="author">
+                {quote.author}
+            </p>
+        </div>
+    })
+
+    let randomQuote = quoteResult[Math.floor(Math.random() * quoteResult.length)];
 
     return (
         <>
@@ -12,11 +37,11 @@ export default function Quotes() {
                 <div className="quote-section">
                     <blockquote>
                         <i class="fas fa-quote-left quote-icon quote-icon-one"></i>
-                        {!quote ? randomQuote : quote}
+                        {randomQuote}
                         <i class="fas fa-quote-right quote-icon quote-icon-two"></i>
                     </blockquote>
                 </div>
-                <button className="btn-new" onClick={() => setQuote(randomQuote)}>
+                <button className="btn-new" onClick={randomQuote}>
                     <img src={btnDeco} alt="" width="200" />
                 </button>
             </div>
