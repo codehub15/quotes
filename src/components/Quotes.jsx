@@ -4,8 +4,8 @@ import btnDeco from "../assets/deco-btn.png"
 
 export default function Quotes() {
     const [quotes, setQuotes] = useState([]);
+    const [anotherQuote, setAnotherQuote] = useState("");
 
-    // fetch data
     useEffect(() => {
         fetchData()
     }, [])
@@ -31,6 +31,10 @@ export default function Quotes() {
 
     let randomQuote = quoteResult[Math.floor(Math.random() * quoteResult.length)];
 
+    let getAnotherQuote = () => {
+        setAnotherQuote(quoteResult[Math.floor(Math.random() * quoteResult.length)])
+    }
+
     return (
         <>
             <div className="container">
@@ -41,7 +45,7 @@ export default function Quotes() {
                         <i class="fas fa-quote-right quote-icon quote-icon-two"></i>
                     </blockquote>
                 </div>
-                <button className="btn-new" onClick={randomQuote}>
+                <button className="btn-new" onClick={() => getAnotherQuote()}>
                     <img src={btnDeco} alt="" width="200" />
                 </button>
             </div>
