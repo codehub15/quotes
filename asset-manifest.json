@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "./static/css/main.0608356d.chunk.css",
-    "main.js": "./static/js/main.23609080.chunk.js",
-    "main.js.map": "./static/js/main.23609080.chunk.js.map",
+    "main.js": "./static/js/main.a537bd16.chunk.js",
+    "main.js.map": "./static/js/main.a537bd16.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.8c7cf350.js",
     "runtime-main.js.map": "./static/js/runtime-main.8c7cf350.js.map",
-    "static/js/2.8564da13.chunk.js": "./static/js/2.8564da13.chunk.js",
-    "static/js/2.8564da13.chunk.js.map": "./static/js/2.8564da13.chunk.js.map",
+    "static/js/2.0db013da.chunk.js": "./static/js/2.0db013da.chunk.js",
+    "static/js/2.0db013da.chunk.js.map": "./static/js/2.0db013da.chunk.js.map",
     "index.html": "./index.html",
     "static/css/main.0608356d.chunk.css.map": "./static/css/main.0608356d.chunk.css.map",
-    "static/js/2.8564da13.chunk.js.LICENSE.txt": "./static/js/2.8564da13.chunk.js.LICENSE.txt",
+    "static/js/2.0db013da.chunk.js.LICENSE.txt": "./static/js/2.0db013da.chunk.js.LICENSE.txt",
     "static/media/deco-btn.b130b8ea.png": "./static/media/deco-btn.b130b8ea.png",
     "static/media/deco-qoute.0bb5634a.png": "./static/media/deco-qoute.0bb5634a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8c7cf350.js",
-    "static/js/2.8564da13.chunk.js",
+    "static/js/2.0db013da.chunk.js",
     "static/css/main.0608356d.chunk.css",
-    "static/js/main.23609080.chunk.js"
+    "static/js/main.a537bd16.chunk.js"
   ]
 }
